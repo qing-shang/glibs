@@ -23,6 +23,6 @@ func (p *Pool[T]) Get() T {
 	return p.internal.Get().(T)
 }
 
-func (p *Pool[T]) Set(t T) {
+func (p *Pool[T]) Put(t T) {
 	p.internal.Put(t)
 }
